@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Space+Mono:ital,wght@0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tip</title>
+</head>
+<body>
+    <!--main container-->
+    <div class="wrap">
+        <!--container  -->
+        <div class="main">
+            <!--holds logo image-->
+            <div class="logo">
+               <div class="logo-img">
+                   <img src="./logo.svg" alt="">
+               </div>
+            </div>
+            <!--where the calculation takes place-->
+            <div class="tip-section">
+                <!--bill area wher the bill calculation are done-->
+                <div class="bill-area">
+                   <div class="display-bill" id="num">
+                       <div class="heading">
+                           <h3 id="b">Bill</h3>
+                           <img src="./icon-dollar.svg" alt="" id="per">
+                           <input type="text" name="displayB" class="input" id="bill" placeholder="0" maxlength="10">
+                       </div>
+                       <h3>Select Tip%</h3><br>
+                       <div class="select-tip">
+                          
+                           <div class="tip-button" ><button type="submit"  onclick="calc(1)">5%</button></div>
+                           <div class="tip-button" ><button type="submit" onclick="calc(2)">10%</button></div>
+                           <div class="tip-button"  ><button type="submit" onclick="calc(3)">15%</button></div>
+                           <div class="tip-button" ><button type="submit" onclick="calc(4)">25%</button></div>
+                           <div class="tip-button" ><button type="submit" onclick="calc(5)">50%</button></div>
+                           <div class="tip-button" ><button type="submit" onclick="calc(6)"class="custom">custom</button></div>
+                       </div>
+                       <div class="number-people" id="num">
+                        <div class="heading">
+                            <h3  id="b">number of people</h3>
+                            <img src="./icon-person.svg" alt="" id="per">
+                            <input  type="text" name="totNum" class="input" id="Persons" placeholder="0" maxlength="10" required>
+                        </div>
+                       </div>
+                   </div>
+                </div>
+                <!--tip total will be displayed-->
+                <div class="total-tip">
+                     <div class="tip-amount">
+                        <div class="head">
+                            <h3>Tip amount</h3>
+                            <div class="person">
+                            <input type="text" name="p" id="tip" value="/  person" readonly>
+                            <div class="iput">
+                                <img src="./icon-dollar.svg" alt=""id="p">
+                            <input type="text" name="tipamount" class="tip-input" id="pertip" placeholder="0.00" readonly>
+                            </div>
+                            </div>
+                     </div>
+                </div>
+                <div class="total">
+                    <div class="head">
+
+                        <h3>Total</h3>
+                        <div class="person">
+                            <input type="text" name="p" id="tip" value="/  person" readonly>
+                            <div class="iput">
+                                <img src="./icon-dollar.svg" alt="" id="p">
+                            <input type="text" name="totpeople" class="tip-input" id="pertotal" placeholder="0.00" readonly>
+                            </div>
+                        </div>
+                        
+                 </div>
+                 <div class="reset">
+                     <button type="submit" id="reset" onclick="reset()">reset</button>
+                 </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="./j.js"></script>
+</body>
+</html>

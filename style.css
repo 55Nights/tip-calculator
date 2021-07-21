@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Space Mono', monospace;
+    background: hsl(185, 41%, 84%);
+    
+}
+/*general styling*/
+
+
+/*styling inputs*/
+.input{
+    position: relative;
+    width: 100%;
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color:  hsl(180, 17%, 95%);
+   border-style: none;
+   text-align: right;
+}
+
+@media only screen and  (max-width:700px) {
+    .input{
+        position: relative;
+    width: 100%;
+       
+    }
+}
+
+/*styling h3*/
+h3{
+    font-size: 13px;
+    font-weight: 3em;
+}
+/*styling button of select tip*/
+button{
+    font-family: 'Space Mono', monospace;
+    color: white;
+   background-color: hsl(183, 100%, 15%);
+   width: 10em;
+   padding: 1em;
+   margin-bottom: 1em;
+   border-radius: 0.5em;
+   font-size: 1em;
+   font-weight: 700;
+   border-style: none;
+}
+button:hover{
+    background-color: hsl(180, 94%, 52%);
+    cursor: pointer;
+    color: hsl(183, 100%, 15%) ;
+}
+/*custom button*/
+.custom{
+    font-family: 'Space Mono', monospace;
+    color: hsl(183, 100%, 15%) ;
+    background-color: hsl(185, 41%, 84%);
+}
+
+/*tip-area heading*/
+.head{
+    color: white;
+}
+/*tip-area input */
+.tip-input,#tip{
+    position: relative;
+    width: 100%;
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    border-radius: 10px;
+    padding: 5px;
+    color:hsl(183, 80%, 40%) ;
+    background:hsl(183, 100%, 15%) ;
+   border-style: none;
+  
+}
+#tip{
+    font-size: 13px;
+}
+/*reset button*/
+#reset{
+    position: relative;
+   margin-top: 8em;
+    width: 100%;
+    font-family: 'Space Mono', monospace;
+    background-color:hsl(183, 81%, 27%) ;
+    color: rgb(4, 61, 61);
+    border-style: none;
+     
+  
+}
+#reset:hover{
+    background-color: hsl(180, 94%, 52%);
+}
+@media only screen and  (min-width:700px) {
+    #reset{
+        margin-top: 1em;
+        width: 100%;
+    }
+}
+/*structure */
+.wrap{
+    width: 100%;
+    background: hsl(185, 41%, 84%);
+}
+.main{
+    min-width: 350px;
+    background: hsl(185, 41%, 84%);
+   
+}
+@media only screen and  (min-width:700px) {
+    .main{
+        width: 100%;
+    }
+}
+
+.logo{
+    position: relative;
+   width: 20%;
+  left: 40%;
+  margin-top: 4em;
+   
+    margin-bottom: 4em;
+}
+@media only screen and  (min-width:700px) {
+    .logo{
+       margin-top: 0.1em;
+       margin-bottom: 0.1em;
+    }
+}
+
+
+.tip-section{
+    
+    position: relative;
+   
+   max-width: 60%;
+  margin: auto;
+  min-width: 350px;
+   display: flex;
+   justify-content: space-between;
+    background-color: white;
+    padding: 2em;
+   border-radius: 2em;
+}
+  @media only screen and (min-width:700px) {
+    
+.tip-section{
+    
+    width: 100%;
+    flex-direction: column;
+    margin-top: 2em;
+    border-radius: 2em;
+    background: white;
+    padding: 2em;
+}
+}
+
+
+.display-bill{
+   border-radius: 2em;
+    margin-bottom: 2em;
+}
+@media only screen and (min-width:700px) {
+    
+    .display-bill{
+       width: 100%;
+    }
+}
+.heading{
+    margin-top: 2em;
+}
+@media only screen and (min-width:700px) {
+    .heading{
+        margin-top: 2em;
+    }
+}
+.select-tip{
+    position: relative;
+    min-width: 350px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+}
+
+    @media only screen and (min-width:700px) {
+        .select-tip{
+            position: relative;
+            width: 100%;
+            display: grid;
+            grid-template-columns: auto auto;
+           
+        }
+    }
+
+    .total-tip{
+      
+        position: relative;
+        width: 50%;
+        height: 50vh;
+        margin-top: 3em;
+        margin-left: 1em;
+        background:hsl(183, 100%, 15%);
+        padding-top: 4em;
+        padding-right: 2em;
+        padding-left: 2em;
+        border-radius: 1em;
+    }
+    @media only screen and (min-width:700px) {
+        .total-tip{
+            width: 100%;
+            height: 40vh;
+        }
+        
+    }
+.person{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+#per{
+    position: absolute;
+    z-index: 1;
+    left: 2em;
+    padding: 10px;
+    text-align: center;
+}
+#p{
+    position: absolute;
+   z-index: 1;
+   text-align: center;
+   right: 11em;
+   top: 1em;
+}
+
+#pertotal,#pertip{
+    position: relative;
+    width: 100%;
+    
+}
+@media only screen and (min-width:700px){
+#pertotal,#pertip{
+    position: relative;
+   width: 100%;
+}
+}
+#b{
+    margin-bottom: 1em;
+}
