@@ -8,9 +8,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tip</title>
+    <title>Tip calculator</title>
 </head>
 <body>
+    <main>
     <!--main container-->
     <div class="wrap">
         <!--container  -->
@@ -18,7 +19,7 @@
             <!--holds logo image-->
             <div class="logo">
                <div class="logo-img">
-                   <img src="./logo.svg" alt="">
+                   <img src="./assets/logo.svg" alt="">
                </div>
             </div>
             <!--where the calculation takes place-->
@@ -28,7 +29,7 @@
                    <div class="display-bill" id="num">
                        <div class="heading">
                            <h3 id="b">Bill</h3>
-                           <img src="./icon-dollar.svg" alt="" id="per">
+                           <img src="./assets/icon-dollar.svg" alt="" id="per">
                            <input type="text" name="displayB" class="input" id="bill" placeholder="0" maxlength="10">
                        </div>
                        <h3>Select Tip%</h3><br>
@@ -44,7 +45,7 @@
                        <div class="number-people" id="num">
                         <div class="heading">
                             <h3  id="b">number of people</h3>
-                            <img src="./icon-person.svg" alt="" id="per">
+                            <img src="./assets/icon-person.svg" alt="" id="per">
                             <input  type="text" name="totNum" class="input" id="Persons" placeholder="0" maxlength="10" required>
                         </div>
                        </div>
@@ -58,7 +59,7 @@
                             <div class="person">
                             <input type="text" name="p" id="tip" value="/  person" readonly>
                             <div class="iput">
-                                <img src="./icon-dollar.svg" alt=""id="p">
+                                <img src="./assets/icon-dollar.svg" alt="icon-dollar" id="dolla">
                             <input type="text" name="tipamount" class="tip-input" id="pertip" placeholder="0.00" readonly>
                             </div>
                             </div>
@@ -71,7 +72,7 @@
                         <div class="person">
                             <input type="text" name="p" id="tip" value="/  person" readonly>
                             <div class="iput">
-                                <img src="./icon-dollar.svg" alt="" id="p">
+                                <img src="./assets/icon-dollar.svg" alt="  icon-dollar" id="dolla">
                             <input type="text" name="totpeople" class="tip-input" id="pertotal" placeholder="0.00" readonly>
                             </div>
                         </div>
@@ -84,6 +85,7 @@
             </div>
         </div>
     </div>
+</main>
     <script src="./j.js"></script>
 </body>
 </html>

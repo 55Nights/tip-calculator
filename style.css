@@ -8,8 +8,96 @@ body{
     background: hsl(185, 41%, 84%);
     
 }
-/*general styling*/
+.wrap{
+    width: 100%;
+    background: hsl(185, 41%, 84%);
+}
+.main{
+    min-width: 350px;
+    background: hsl(185, 41%, 84%);
+   
+}
 
+.logo{
+    position: relative;
+    width: 20%;
+    left: 40%;
+    margin-top: 4em;
+    margin-bottom: 4em;
+    
+}
+.tip-section{
+    
+    position: relative;
+    margin: auto;
+    background-color: white;
+    padding: 1em;
+    border-radius: 2em;
+}
+.display-bill{
+
+   border-radius: 2em;
+    margin-bottom: 2em;
+    
+}
+
+.heading{
+    margin-top: 2em;
+}
+
+.select-tip{
+   
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-gap: 10px;
+    text-align: center;
+    
+}
+.iput{
+    position: relative ;
+    width: 100%;
+    align-items: right;
+    display: flex;
+   align-items: flex-end;
+}
+.total-tip{
+        width: 100%;
+        position: relative;
+        margin-top: 3em;
+        background:hsl(183, 100%, 15%);
+        padding-top: 4em;
+        padding-right: 2em;
+        padding-left: 2em;
+        border-radius: 1em;
+    }
+    
+.person{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+#per{
+    position: absolute;
+    z-index: 1;
+    left: 2em;
+    padding: 10px;
+    text-align: center;
+}
+
+
+#pertotal,#pertip{
+
+    position: relative;
+    width: 100%;
+    
+}
+
+#b{
+    margin-bottom: 1em;
+}
+/*general styling*/
 
 /*styling inputs*/
 .input{
@@ -24,13 +112,7 @@ body{
    text-align: right;
 }
 
-@media only screen and  (max-width:700px) {
-    .input{
-        position: relative;
-    width: 100%;
-       
-    }
-}
+
 
 /*styling h3*/
 h3{
@@ -68,8 +150,9 @@ button:hover{
 }
 /*tip-area input */
 .tip-input,#tip{
+
+   
     position: relative;
-    width: 100%;
     font-family: 'Space Mono', monospace;
     font-size: 24px;
     border-radius: 10px;
@@ -77,10 +160,18 @@ button:hover{
     color:hsl(183, 80%, 40%) ;
     background:hsl(183, 100%, 15%) ;
    border-style: none;
+ 
   
 }
 #tip{
     font-size: 13px;
+}
+.tip-input{
+    text-align: end;
+    
+}
+#dolla{
+    margin: 0.5em;
 }
 /*reset button*/
 #reset{
@@ -97,158 +188,5 @@ button:hover{
 #reset:hover{
     background-color: hsl(180, 94%, 52%);
 }
-@media only screen and  (min-width:700px) {
-    #reset{
-        margin-top: 1em;
-        width: 100%;
-    }
-}
-/*structure */
-.wrap{
-    width: 100%;
-    background: hsl(185, 41%, 84%);
-}
-.main{
-    min-width: 350px;
-    background: hsl(185, 41%, 84%);
-   
-}
-@media only screen and  (min-width:700px) {
-    .main{
-        width: 100%;
-    }
-}
-
-.logo{
-    position: relative;
-   width: 20%;
-  left: 40%;
-  margin-top: 4em;
-   
-    margin-bottom: 4em;
-}
-@media only screen and  (min-width:700px) {
-    .logo{
-       margin-top: 0.1em;
-       margin-bottom: 0.1em;
-    }
-}
 
 
-.tip-section{
-    
-    position: relative;
-   
-   max-width: 60%;
-  margin: auto;
-  min-width: 350px;
-   display: flex;
-   justify-content: space-between;
-    background-color: white;
-    padding: 2em;
-   border-radius: 2em;
-}
-  @media only screen and (min-width:700px) {
-    
-.tip-section{
-    
-    width: 100%;
-    flex-direction: column;
-    margin-top: 2em;
-    border-radius: 2em;
-    background: white;
-    padding: 2em;
-}
-}
-
-
-.display-bill{
-   border-radius: 2em;
-    margin-bottom: 2em;
-}
-@media only screen and (min-width:700px) {
-    
-    .display-bill{
-       width: 100%;
-    }
-}
-.heading{
-    margin-top: 2em;
-}
-@media only screen and (min-width:700px) {
-    .heading{
-        margin-top: 2em;
-    }
-}
-.select-tip{
-    position: relative;
-    min-width: 350px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 10px;
-}
-
-    @media only screen and (min-width:700px) {
-        .select-tip{
-            position: relative;
-            width: 100%;
-            display: grid;
-            grid-template-columns: auto auto;
-           
-        }
-    }
-
-    .total-tip{
-      
-        position: relative;
-        width: 50%;
-        height: 50vh;
-        margin-top: 3em;
-        margin-left: 1em;
-        background:hsl(183, 100%, 15%);
-        padding-top: 4em;
-        padding-right: 2em;
-        padding-left: 2em;
-        border-radius: 1em;
-    }
-    @media only screen and (min-width:700px) {
-        .total-tip{
-            width: 100%;
-            height: 40vh;
-        }
-        
-    }
-.person{
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-}
-#per{
-    position: absolute;
-    z-index: 1;
-    left: 2em;
-    padding: 10px;
-    text-align: center;
-}
-#p{
-    position: absolute;
-   z-index: 1;
-   text-align: center;
-   right: 11em;
-   top: 1em;
-}
-
-#pertotal,#pertip{
-    position: relative;
-    width: 100%;
-    
-}
-@media only screen and (min-width:700px){
-#pertotal,#pertip{
-    position: relative;
-   width: 100%;
-}
-}
-#b{
-    margin-bottom: 1em;
-}
